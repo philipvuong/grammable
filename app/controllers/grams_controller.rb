@@ -17,6 +17,10 @@ class GramsController < ApplicationController
     end
   end
 
+  def show
+    @gram = Gram.find(params[:id])
+  end
+
   private
 
   def gram_params
